@@ -10,13 +10,6 @@ const baixo = document.querySelector('#mover-baixo'); // a classe de todas os it
 const itemtarefas = document.getElementsByClassName('item')
 const select = document.getElementsByClassName('selected') //selecionado
 
-
-// textoTarefa.addEventListener("keypress", function(event) {
-//   if (event.keyCode === 'Enter') {
-//     window.alert('clicou');
-//   }
-// }
-
 // botao enter
 
 function adicionar() {
@@ -28,7 +21,13 @@ function adicionar() {
     textoTarefa.style.backgroundColor = 'white';  
 };
 
-CriarTarefa.addEventListener('click',adicionar);
+textoTarefa.addEventListener("keydown", function(event) { //keyup na hora que soube o botao keydown quando abaixa o botao
+  if (event.which == 13) { //evento realizado atraves do https://keycode.info/
+     adicionar();
+   }
+ });
+
+// CriarTarefa.addEventListener('click',adicionar);
 
 
 
@@ -63,7 +62,7 @@ CriarTarefa.addEventListener('click',adicionar);
     for (let index = 0; index < itemtarefas.length; index++) { // vai pecorrer todos os elementos ate encontrar o elemento com a palavra completed ou null(vazio '')
       if (itemtarefas[index].classList.contains('completed') || itemtarefas[index].innerText === '') { // se conter completed ou estiver vazio ele vai executar o comando
         itemtarefas[index].remove(); // remove o item da lista o li sai da ol
-        --index;
+         --index;
         //remove todos os itens senao tiver o --index ou index-- nao vai remover o primeiro item riscado
       }
     }
@@ -95,7 +94,7 @@ CriarTarefa.addEventListener('click',adicionar);
     // achei essa função insertBefore aqui: https://stackoverflow.com/questions/5882768/how-to-append-a-childnode-to-a-specific-position
     for (let index = 0; index < itemtarefas.length; index++) {
       if (itemtarefas[index] === select[0] && select[0] !== itemtarefas[0]) {
-        lista.insertBefore(select[0], lista.children[index - 1]);
+        lista.insertBefore(select[0], lista.children[index-1]);
         return;
       }
     }
@@ -108,7 +107,7 @@ CriarTarefa.addEventListener('click',adicionar);
   function ParaBaixo() {
     
     for (let index = 0; index < itemtarefas.length; index++) {
-      if (select[0] === itemtarefas[index] && select[0] !== itemtarefas.length-1) {
+      if (select[0] === itemtarefas[index] && select[0] !== itemtarefas.length-1) { //
         lista.insertBefore(select[0], lista.children[index + 2]);
         return;
       }
