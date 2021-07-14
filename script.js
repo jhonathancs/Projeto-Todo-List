@@ -10,15 +10,11 @@ const baixo = document.querySelector('#mover-baixo'); // a classe de todas os it
 const itemtarefas = document.getElementsByClassName('item')
 const select = document.getElementsByClassName('selected') //selecionado
 
-// function enter {
-//   const inputEle = document.getElementById('#texto-tarefa');
-// inputEle.addEventListener('keyup', function(e){
-//   var key = e.which || e.keyCode;
-//   if (key == 13) { // codigo da tecla enter
-//     // colocas aqui a tua função a rodar
-//     alert('carregou enter o valor digitado foi: ' +this.value);
+
+// textoTarefa.addEventListener("keypress", function(event) {
+//   if (event.keyCode === 'Enter') {
+//     window.alert('clicou');
 //   }
-// });
 // }
 
 // botao enter
@@ -33,6 +29,8 @@ function adicionar() {
 };
 
 CriarTarefa.addEventListener('click',adicionar);
+
+
 
 //selecionar o botao
     function selecionar(evento) {

@@ -7,12 +7,105 @@
     text-align: center;
 }
 
-#criar-tarefa {
-    height: 25px;
-    width: 120px;
+h1 {
+    font-size: 50px;
+    background-color: #036b52;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    
 }
 
 .completed {
-    text-decoration: line-through solid rgb(0,0,0);
+    text-decoration: line-through solid rgb(0, 0, 0);
 }
 
+#criar-tarefa {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+#remover-selecionado {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#apaga-tudo {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#remover-finalizados{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#salvar-tarefas {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#mover-cima {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#mover-baixo {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center !important; 
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
