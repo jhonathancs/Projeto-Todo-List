@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#criar-tarefa {
+    height: 25px;
+    width: 120px;
+}
+
+.completed {
+    text-decoration: line-through solid rgb(0,0,0);
+}
+
